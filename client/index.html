@@ -9,6 +9,15 @@
 
   {{> productList}}
 
+  Artists :
+  {{#each artists}}
+  <div class="col-lg-4">
+      <h4>{{firstname}}</h4>
+      <p>{{email}}</p>
+  </div>
+  {{/each}}
+  <br />
+
 </body>
 
 <template name="hello">

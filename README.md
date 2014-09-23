@@ -1,5 +1,13 @@
 # Temple with Meteor
 
+## Meteor cheatsheet
+
+source : https://gist.github.com/patrickleet/6312627
+
+## Create collection on the fly
+
+Source : http://stackoverflow.com/questions/15214667/creating-new-meteor-collections-on-the-fly
+
 ## Building large, modular apps in Meteor
 
 Source : http://tech.exponential.io/meteor/building-large-modular-apps-meteor/
