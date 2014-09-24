@@ -4,7 +4,7 @@
 
 Source : https://github.com/gterrono/houston
 
-Note bene : this auto discovers your collection : 
+Note bene : this auto discovers your collection :
 https://github.com/gterrono/houston/blob/master/server/publications.coffee
 
 ## Access Meteor mongodb from other app
@@ -20,9 +20,13 @@ Source : https://gist.github.com/patrickleet/6312627
 
 Source : http://stackoverflow.com/questions/15214667/creating-new-meteor-collections-on-the-fly
 
+## Directory structure for large Meteor app
+
+Source : http://fr.slideshare.net/AkbarAhmed3/directory-structure-for-large-meteor-apps
+
 ## Building large, modular apps in Meteor
 
-Source : http://tech.exponential.io/meteor/building-large-modular-apps-meteor/
+Slides : http://tech.exponential.io/meteor/building-large-modular-apps-meteor/
 
 ## Where should I put my files?
 
