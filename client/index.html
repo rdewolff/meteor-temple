@@ -3,13 +3,10 @@
 </head>
 
 <body>
-  <h1>Temple home</h1>
+  <h1>eMP</h1>
 
   {{> hello}}
 
-  {{> productList}}
-
-  Artists :
   {{#each artists}}
   <div class="col-lg-4">
       <h4>{{firstname}}</h4>
@@ -17,6 +14,8 @@
   </div>
   {{/each}}
   <br />
+
+  {{> yeld}}
 
 </body>
 
@@ -27,20 +26,5 @@
   <button class="btn btn-primary">Save</button>
 
   <p>You've pressed the button {{counter}} times.</p>
-  Test
-</template>
-
-<template name="productList">
-    <div class="row">
-        <div class="col-lg-4">
-            <h4>title</h4>
-            <p>description</p>
-        </div>
-        {{#each products}}
-        <div class="col-lg-4">
-            <h4>{{title}}</h4>
-            <p>{{description}}</p>
-        </div>
-        {{/each}}
-    </div>
+  
 </template>

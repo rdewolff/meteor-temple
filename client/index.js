@@ -2,6 +2,8 @@
 
 console.log('client');
 
+// Meteor.subscribe('artists');
+
 Session.setDefault("counter", 0);
 
 Template.hello.helpers({
@@ -16,3 +18,11 @@ Template.hello.events({
     Session.set("counter", Session.get("counter") + 1);
   }
 });
+
+/*
+Template.home.helpers({
+  artists: function() {
+    return Artists.find();
+  }
+});
+*/

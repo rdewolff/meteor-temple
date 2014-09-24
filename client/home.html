@@ -1,0 +1,17 @@
+<template name="home">
+
+  <h1>Temple Home</h1>
+
+  <h2>Artists</h2>
+
+  <div class="col-lg-4">
+    <b>Firstname</b> - <b>email</b>
+  </div>
+  {{#each artists}}
+  <div class="col-lg-4">
+      {{firstname}} - {{email}}
+  </div>
+  {{/each}}
+  <br />
+
+</template>
