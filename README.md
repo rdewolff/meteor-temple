@@ -1,8 +1,20 @@
 # Temple with Meteor
 
+## Admin CRUD all collection
+
+Source : https://github.com/gterrono/houston
+
+Note bene : this auto discovers your collection : 
+https://github.com/gterrono/houston/blob/master/server/publications.coffee
+
+## Access Meteor mongodb from other app
+
+Host : localhost
+Port : _3001_
+
 ## Meteor cheatsheet
 
-source : https://gist.github.com/patrickleet/6312627
+Source : https://gist.github.com/patrickleet/6312627
 
 ## Create collection on the fly
 
