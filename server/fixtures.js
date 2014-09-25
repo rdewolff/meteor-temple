@@ -1,39 +1,39 @@
 /**
- * System
+ * TempleSystem
  */
- // TODO: split system (core) and custom (customer)
+ // TODO: split TempleSystem (core) and custom (customer)
  // TODO: use with()
 // properties
-System['properties'].remove({});
-if (System['properties'].find().count() === 0) {
-  System['properties'].insert({ "name" : "URL", "value" : "http://", });
-  System['properties'].insert({ "name" : "CustomerName", "value" : "zetcom", });
-  System['properties'].insert({ "name" : "Languages", "value" : "EN, FR, DE", });
-  System['properties'].insert({ "name" : "RemoteUrl", "value" : "193.23.12.98", });
-  System['properties'].insert({ "name" : "RemoteCollectionsbase", "value" : "emp", });
-  System['properties'].insert({ "name" : "RemoteUsername", "value" : "emp-admin", });
-  System['properties'].insert({ "name" : "RemotePassword", "value" : "287sdkjw398ad2", });
-  System['properties'].insert({ "name" : "elementPerPage", "value" : "10, 25, 50, 100", });
+TempleSystem['properties'].remove({});
+if (TempleSystem['properties'].find().count() === 0) {
+  TempleSystem['properties'].insert({ "name" : "URL", "value" : "http://", });
+  TempleSystem['properties'].insert({ "name" : "CustomerName", "value" : "zetcom", });
+  TempleSystem['properties'].insert({ "name" : "Languages", "value" : "EN, FR, DE", });
+  TempleSystem['properties'].insert({ "name" : "RemoteUrl", "value" : "193.23.12.98", });
+  TempleSystem['properties'].insert({ "name" : "RemoteDatabase", "value" : "emp", });
+  TempleSystem['properties'].insert({ "name" : "RemoteUsername", "value" : "emp-admin", });
+  TempleSystem['properties'].insert({ "name" : "RemotePassword", "value" : "287sdkjw398ad2", });
+  TempleSystem['properties'].insert({ "name" : "elementPerPage", "value" : "10, 25, 50, 100", });
 }
 
 // views
-System['views'].remove({});
-if (System['views'].find().count() === 0) {
-  System['views'].insert({
+TempleSystem['views'].remove({});
+if (TempleSystem['views'].find().count() === 0) {
+  TempleSystem['views'].insert({
     name: 'list'
   });
-  System['views'].insert({
+  TempleSystem['views'].insert({
     name: 'detail'
   });
-  System['views'].insert({
+  TempleSystem['views'].insert({
     name: 'search'
   });
 }
 
 // labels
-System['labels'].remove({});
-if (System['labels'].find().count() === 0) {
-  System['labels'].insert({
+TempleSystem['labels'].remove({});
+if (TempleSystem['labels'].find().count() === 0) {
+  TempleSystem['labels'].insert({
     name: 'Title', // the idea is to have the internal name
     field: '123',
     language: 'EN',
@@ -42,17 +42,17 @@ if (System['labels'].find().count() === 0) {
 }
 
 /**
- * Collections
+ * Data
  */
 
 // objects
-if ( Collections['objects'].find().count() === 0 ) {
-  Collections['objects'].insert({
+if ( TempleData['objects'].find().count() === 0 ) {
+  TempleData['objects'].insert({
     title: 'Jagged Lines',
     date: 2010,
     description: 'Video (DVD)'
   });
-  Collections['objects'].insert({
+  TempleData['objects'].insert({
     title: 'Faux facade',
     date: 2011,
     dimension: '150x140x210 cm',
@@ -61,25 +61,25 @@ if ( Collections['objects'].find().count() === 0 ) {
 }
 
 // artists
-if ( Collections['artists'].find().count() === 0 ) {
-  Collections['artists'].insert({
+if ( TempleData['artists'].find().count() === 0 ) {
+  TempleData['artists'].insert({
     firstname: 'Kaspar',
     lastname: 'Bucher',
     nationality: 'CH',
     email: 'ratkinson@test.com',
     url: 'www.kasparbucher.ch'
   });
-  Collections['artists'].insert({
+  TempleData['artists'].insert({
     firstname: 'Robert',
     lastname: 'Atkinson',
     email: 'ratkinson@test.com'
   });
-  Collections['artists'].insert({
+  TempleData['artists'].insert({
     firstname: 'John',
     lastname: 'Doe',
     email: 'jdoe@test.com'
   });
-  Collections['artists'].insert({
+  TempleData['artists'].insert({
     firstname: 'Melinda',
     lastname: 'Jones',
     email: 'melinda.jones@gmail.com'
@@ -87,18 +87,18 @@ if ( Collections['artists'].find().count() === 0 ) {
 }
 
 // exhibitions
-if ( Collections['exhibitions'].find().count() === 0 ) {
-  Collections['exhibitions'].insert({
+if ( TempleData['exhibitions'].find().count() === 0 ) {
+  TempleData['exhibitions'].insert({
     title: 'Visarte Galerie Program',
     location: 'Bern, Switzerland',
     date: 2010
   });
-  Collections['exhibitions'].insert({
+  TempleData['exhibitions'].insert({
     title: 'Ostrale 08',
     location: 'Dresden, Germany',
     date: 2008
   });
-  Collections['exhibitions'].insert({
+  TempleData['exhibitions'].insert({
     title: 'Restaurant Schwellenmätteli',
     location: 'Bern, Switzerland',
     date: 2002
