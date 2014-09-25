@@ -1,39 +1,17 @@
-<!-- <head>
-  <title>Temple</title>
+<head>
+  <title>Temple Prototype</title>
 </head>
 
 <body>
-  {{> template }}
-</body> -->
+  {{!-- left blank --}}
+</body>
 
-<template name="t1">
-
-  Template T1
-
-  <br />
-
-  {{> yield}}
-
-</template>
-
-<template name="t2">
-
-  Template T2
-
-</template>
-
-<!--
-<template name="template">
-
-
-    {{> header}}
-
-    <div class="container">
-
+<template name="layout">
+      {{> header}}
+      <div class="container">
+        {{> yield}}
+      </div>
       {{> footer}}
-
-    </div>
-
 </template>
 
 <template name="header">
@@ -80,14 +58,3 @@
   <a class="btn btn-warning btn-sm" href="/p">Temple Admin</a>
   <p class="spacer"></p>
 </template>
-
-
-<template name="hello">
-
-  <button class="btn btn-primary">Click Me</button>
-
-  <button class="btn btn-primary">Save</button>
-
-  <p>You've pressed the button {{counter}} times.</p>
-
-</template> -->
