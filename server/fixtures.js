@@ -2,51 +2,38 @@
  * System
  */
  // TODO: split system (core) and custom (customer)
+ // TODO: use with()
 // properties
-SysProperties.remove({});
-if (SysProperties.find().count() === 0) {
-  SysProperties.insert({ "name" : "URL", "value" : "http://", });
-  SysProperties.insert({ "name" : "CustomerName", "value" : "zetcom", });
-  SysProperties.insert({ "name" : "Languages", "value" : "EN, FR, DE", });
-  SysProperties.insert({ "name" : "RemoteUrl", "value" : "193.23.12.98", });
-  SysProperties.insert({ "name" : "RemoteDatabase", "value" : "emp", });
-  SysProperties.insert({ "name" : "RemoteUsername", "value" : "emp-admin", });
-  SysProperties.insert({ "name" : "RemotePassword", "value" : "287sdkjw398ad2", });
-  SysProperties.insert({ "name" : "elementPerPage", "value" : "10, 25, 50, 100", });
-}
-
-// modules
-SysModules.remove({});
-if (SysModules.find().count() === 0) {
- SysModules.insert({
-   name: 'collection'
- });
- SysModules.insert({
-   name: 'artist'
- });
- SysModules.insert({
-   name: 'exhibition'
- });
+System['properties'].remove({});
+if (System['properties'].find().count() === 0) {
+  System['properties'].insert({ "name" : "URL", "value" : "http://", });
+  System['properties'].insert({ "name" : "CustomerName", "value" : "zetcom", });
+  System['properties'].insert({ "name" : "Languages", "value" : "EN, FR, DE", });
+  System['properties'].insert({ "name" : "RemoteUrl", "value" : "193.23.12.98", });
+  System['properties'].insert({ "name" : "RemoteCollectionsbase", "value" : "emp", });
+  System['properties'].insert({ "name" : "RemoteUsername", "value" : "emp-admin", });
+  System['properties'].insert({ "name" : "RemotePassword", "value" : "287sdkjw398ad2", });
+  System['properties'].insert({ "name" : "elementPerPage", "value" : "10, 25, 50, 100", });
 }
 
 // views
-SysViews.remove({});
-if (SysViews.find().count() === 0) {
-  SysViews.insert({
+System['views'].remove({});
+if (System['views'].find().count() === 0) {
+  System['views'].insert({
     name: 'list'
   });
-  SysViews.insert({
+  System['views'].insert({
     name: 'detail'
   });
-  SysViews.insert({
+  System['views'].insert({
     name: 'search'
   });
 }
 
 // labels
-SysLabels.remove({});
-if (SysLabels.find().count() === 0) {
-  SysLabels.insert({
+System['labels'].remove({});
+if (System['labels'].find().count() === 0) {
+  System['labels'].insert({
     name: 'Title', // the idea is to have the internal name
     field: '123',
     language: 'EN',
@@ -55,17 +42,17 @@ if (SysLabels.find().count() === 0) {
 }
 
 /**
- * Data
+ * Collections
  */
 
 // objects
-if ( Objects.find().count() === 0 ) {
-  Objects.insert({
+if ( Collections['objects'].find().count() === 0 ) {
+  Collections['objects'].insert({
     title: 'Jagged Lines',
     date: 2010,
     description: 'Video (DVD)'
   });
-  Objects.insert({
+  Collections['objects'].insert({
     title: 'Faux facade',
     date: 2011,
     dimension: '150x140x210 cm',
@@ -74,25 +61,25 @@ if ( Objects.find().count() === 0 ) {
 }
 
 // artists
-if ( Artists.find().count() === 0 ) {
-  Artists.insert({
+if ( Collections['artists'].find().count() === 0 ) {
+  Collections['artists'].insert({
     firstname: 'Kaspar',
     lastname: 'Bucher',
     nationality: 'CH',
     email: 'ratkinson@test.com',
     url: 'www.kasparbucher.ch'
   });
-  Artists.insert({
+  Collections['artists'].insert({
     firstname: 'Robert',
     lastname: 'Atkinson',
     email: 'ratkinson@test.com'
   });
-  Artists.insert({
+  Collections['artists'].insert({
     firstname: 'John',
     lastname: 'Doe',
     email: 'jdoe@test.com'
   });
-  Artists.insert({
+  Collections['artists'].insert({
     firstname: 'Melinda',
     lastname: 'Jones',
     email: 'melinda.jones@gmail.com'
@@ -100,18 +87,18 @@ if ( Artists.find().count() === 0 ) {
 }
 
 // exhibitions
-if ( Exhibition.find().count() === 0 ) {
-  Exhibition.insert({
+if ( Collections['exhibitions'].find().count() === 0 ) {
+  Collections['exhibitions'].insert({
     title: 'Visarte Galerie Program',
     location: 'Bern, Switzerland',
     date: 2010
   });
-  Exhibition.insert({
+  Collections['exhibitions'].insert({
     title: 'Ostrale 08',
     location: 'Dresden, Germany',
     date: 2008
   });
-  Exhibition.insert({
+  Collections['exhibitions'].insert({
     title: 'Restaurant Schwellenmätteli',
     location: 'Bern, Switzerland',
     date: 2002

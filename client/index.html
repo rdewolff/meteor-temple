@@ -3,15 +3,21 @@
 </head>
 
 <body>
-  {{!-- left blank --}}
+  {{!-- left blank - replaced dynamically --}}
 </body>
 
 <template name="layout">
+
       {{> header}}
+
       <div class="container">
+
         {{> yield}}
+
       </div>
+
       {{> footer}}
+
 </template>
 
 <template name="header">
@@ -55,6 +61,6 @@
 <template name="footer">
   <hr>
   <p>&copy; Zetcom 2014</p>
-  <a class="btn btn-warning btn-sm" href="/p">Temple Admin</a>
+  <a class="btn btn-warning btn-sm" href="/admin">Temple Admin</a>
   <p class="spacer"></p>
 </template>
