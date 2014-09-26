@@ -1,12 +1,6 @@
-
-// general helper available to all templates
-
-UI.registerHelper("test", function(){
-  console.log('UI.body.test()');
-  return 'UI.body.test';
-});
-
-
+/**
+ * Gather all the data for the
+ */
 UI.registerHelper("data", function(){
 
   // subscribe to the module being displayed
