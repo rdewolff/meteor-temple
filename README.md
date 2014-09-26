@@ -1,5 +1,11 @@
 # Temple with Meteor
 
+## Dynamic render template steps
+
+- the URL determine the template to use
+- search for the specific template. Example /objects/detail will search for the object_detail template
+- if there is no template, load the default template, for previous example, it would be default_detai
+
 ## Admin CRUD all collection
 
 Source : https://github.com/gterrono/houston
