@@ -28,3 +28,21 @@ UI.registerHelper("data", function(){
   }
 
 });
+
+
+/**
+ * Links and active
+ */
+// Get the current path for URL
+// FIXME: html template doesn't get updated while browsing on th eclient side.. ?!?!
+curPath=function(){var c=window.location.pathname;var b=c.slice(0,-1);var a=c.slice(-1);if(b==""){return"/"}else{if(a=="/"){return b}else{return c}}};
+UI.registerHelper('activeLink', function(path) {
+  console.log('curPath():', curPath());
+  return curPath() == path ? 'active' : '';
+});
+
+// Determine if current link should be active.
+Handlebars.registerHelper('active', function(path) {
+  return curPath() == path ? {class: 'active'} : '';
+
+});
