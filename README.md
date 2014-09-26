@@ -1,5 +1,13 @@
 # Temple with Meteor
 
+## Loading order
+
+- collections
+- routes
+- fixtures
+- main (empty)
+- publications
+
 ## Dynamic render template steps
 
 - the URL determine the template to use

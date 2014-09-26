@@ -3,6 +3,10 @@
  */
 UI.registerHelper("data", function(){
 
+  // check if the module subscribtions are finished
+  if (!moduleSub.ready())
+    return;
+
   // subscribe to the module being displayed
   Meteor.subscribe(Session.get('module'));
 

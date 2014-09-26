@@ -35,11 +35,13 @@ less@1.0.9
 livedata@1.0.10
 localstorage@1.0.0
 logging@1.0.3
+matteodem:easy-search@1.1.0
 meteor-platform@1.1.1
 meteor@1.1.1
 minifiers@1.1.0
 minimongo@1.0.3
 mobile-status-bar@1.0.0
+mongo-livedata@1.0.5
 mongo@1.0.6
 nemo64:bootstrap-data@3.2.0-rc2
 nemo64:bootstrap@3.2.3
@@ -58,6 +60,7 @@ sha@1.0.0
 spacebars-compiler@1.0.2
 spacebars@1.0.2
 srp@1.0.0
+standard-app-packages@1.0.2
 templating@1.0.7
 tmeasday:paginated-subscription@0.2.0
 tracker@1.0.2

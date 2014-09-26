@@ -2,5 +2,13 @@
 
   <h1>Search page</h1>
 
+  {{> esInput index="objects" placeholder="Search..." }}
+
+  {{#esEach index="objects"}}
+    {{title}}
+    {{date}}
+    {{description}}
+  {{/esEach}}
+
 
 </template>

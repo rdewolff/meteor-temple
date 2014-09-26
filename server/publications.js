@@ -6,7 +6,7 @@ Meteor.publish('modules', function () {
 
 // dynamic publish all registered modules (modules in database)
 TempleSystem['modules'].find({}).forEach( function(module) {
-	console.log('module', module.name);
+	// debug console.log('module', module.name);
 	Meteor.publish(module.name, function(author) {
 	  return TempleData[module.name].find({});
 	});
