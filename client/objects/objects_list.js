@@ -1,5 +1,7 @@
-Template.objects_list.helpers({
 /*
+Template.objects_list.helpers({
+
+
   collection : function () {
     console.log('this.route', this.Route);
     Meteor.subscribe('objects');
@@ -9,5 +11,6 @@ Template.objects_list.helpers({
   count: function () {
     return TempleData['objects'].find().count();
   }
-*/
+
 });
+*/
