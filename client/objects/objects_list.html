@@ -1,0 +1,17 @@
+<template name="objects_list">
+
+	<h1>Objects</h1>
+
+  <div class="col-lg-4">
+  {{#each collection}}
+  	<h4>{{title}}</h4>
+  	<p>{{date}}</p>
+  	<p>{{description}}</p>
+  {{/each}}
+  </div>
+
+  <div class="col-lg-4">
+  Total : {{count}}
+  </div>
+  
+</template>

@@ -18,3 +18,8 @@ Template.hello.events({
   }
 });
 */
+
+// general helper available to all templates
+// Handlebars.registerHelper("createdAtFormatted", function(){
+//      return this.createdAt ? moment(this.createdAt).fromNow() : '–';
+// });
