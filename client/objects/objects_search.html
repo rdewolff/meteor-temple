@@ -4,10 +4,11 @@
 
   {{> esInput index="objects" placeholder="Search..." }}
 
+  <br />
   {{#esEach index="objects"}}
-    {{title}}
+    <a href='/objects/{{_id}}'>{{title}}
     {{date}}
-    {{description}}
+    {{description}}</a><br />
   {{/esEach}}
 
 
