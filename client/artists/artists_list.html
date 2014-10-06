@@ -1,0 +1,15 @@
+<template name="artists_list">
+
+	<h1>Artists lists</h1>
+
+  <div class="col-lg-4">
+  {{#each data}}
+  	<h4><a href="/artists/{{_id}}">{{firstname}} {{lastname}}</a></h4>
+  {{/each}}
+  </div>
+
+  <div class="col-lg-4">
+  Total : X
+  </div>
+
+</template>
