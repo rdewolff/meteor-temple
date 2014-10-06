@@ -19,7 +19,7 @@ email@1.0.3
 fastclick@1.0.0
 follower-livedata@1.0.1
 geojson-utils@1.0.0
-houston:admin@1.1.0
+houston:admin@1.1.1
 html-tools@1.0.1
 htmljs@1.0.1
 http@1.0.6
@@ -28,14 +28,14 @@ insecure@1.0.0
 iron:core@0.3.4
 iron:dynamic-template@0.4.1
 iron:layout@0.4.1
-iron:router@0.9.3
+iron:router@0.9.4
 jquery@1.0.0
 json@1.0.0
 less@1.0.9
 livedata@1.0.10
 localstorage@1.0.0
 logging@1.0.3
-matteodem:easy-search@1.1.0
+matteodem:easy-search@1.1.2
 meteor-platform@1.1.1
 meteor@1.1.1
 minifiers@1.1.0
