@@ -8,6 +8,11 @@
 - main (empty)
 - publications
 
+## TODO / TOFIX
+
+- advanced search via minimal/reusable config options.
+- main menu not updating selection on page change. A full page refresh does highlight the correct menu element.
+
 ## Dynamic render template steps
 
 - the URL determine the template to use
@@ -24,7 +29,7 @@ https://github.com/gterrono/houston/blob/master/server/publications.coffee
 ## Access Meteor mongodb from other app
 
 Host : localhost
-Port : _3001_
+Port : 3001
 
 ## Meteor cheatsheet
 
