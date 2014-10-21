@@ -42,7 +42,8 @@ UI.registerHelper('activeLink', function(path) {
 });
 
 // Determine if current link should be active.
-Handlebars.registerHelper('active', function(path) {
-  return curPath() == path ? {class: 'active'} : '';
+UI.registerHelper('active', function(path) {
+  console.log('active() trigger', Meteor.isServer); // , arguments.callee.caller.toString());
 
+  return curPath() == path ? {class: 'active'} : '';
 });
