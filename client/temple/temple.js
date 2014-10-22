@@ -29,21 +29,14 @@ UI.registerHelper("data", function(){
 
 });
 
-
 /**
  * Links and active
  */
-// Get the current path for URL
-// FIXME: html template doesn't get updated while browsing on th eclient side.. ?!?!
-curPath=function(){var c=window.location.pathname;var b=c.slice(0,-1);var a=c.slice(-1);if(b==""){return"/"}else{if(a=="/"){return b}else{return c}}};
-UI.registerHelper('activeLink', function(path) {
-  console.log('curPath():', curPath());
-  return curPath() == path ? 'active' : '';
-});
 
 // Determine if current link should be active.
-UI.registerHelper('active', function(path) {
-  console.log('active() trigger', Meteor.isServer); // , arguments.callee.caller.toString());
+Template.registerHelper('active', function(path) {
+  // messy way : curPath=function(){var c=window.location.pathname;var b=c.slice(0,-1);var a=c.slice(-1);if(b==""){return"/"}else{if(a=="/"){return b}else{return c}}};
 
-  return curPath() == path ? {class: 'active'} : '';
+  // console.log('active() trigger', Meteor.isServer); // , arguments.callee.caller.toString());
+  return Router.current().path == path ? {class: 'active'} : '';
 });

@@ -11,7 +11,10 @@
 ## TODO / TOFIX
 
 - advanced search via minimal/reusable config options.
-- main menu not updating selection on page change. A full page refresh does highlight the correct menu element.
+
+## FIXED
+
+- 22.10.2014 - main menu not updating selection on page change. A full page refresh does highlight the correct menu element.
 
 ## Dynamic render template steps
 
