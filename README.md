@@ -10,7 +10,9 @@
 
 ## TODO / TOFIX
 
-- advanced search via minimal/reusable config options.
+- advanced search via minimal/reusable config options
+  - first a search form with advanced controls (like text, date, listbox, 'smart drop down', etc..)
+  - then make it dynamic
 
 ## FIXED
 
