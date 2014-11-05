@@ -2,6 +2,8 @@
 
   <h1>Search page</h1>
 
+  {{> filters }}
+
   {{> esInput index="objects" placeholder="Search..." }}
 
   <br />
@@ -10,6 +12,22 @@
     {{date}}
     {{description}}</a><br />
   {{/esEach}}
+  <br />
 
+  {{#ifEsHasNoResults index="objects"}}
+    <div class="no-results">No results found!</div>
+  {{/ifEsHasNoResults}}
+
+</template>
+
+<template name="filters">
+  <div class="row">
+    <div class="btn-group col-sm-6">
+      <a href="#" class='btn btn-default disabled filter'>Type :</a>
+      <a href="#" class='btn btn-default filter'>All</a>
+      <a href="#" class='btn btn-default filter'>Tableau</a>
+      <a href="#" class='btn btn-default filter'>Video</a>
+    </div>
+  </div>
 
 </template>

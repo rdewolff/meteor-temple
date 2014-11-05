@@ -40,3 +40,28 @@ Template.registerHelper('active', function(path) {
   // console.log('active() trigger', Meteor.isServer); // , arguments.callee.caller.toString());
   return Router.current().path == path ? {class: 'active'} : '';
 });
+
+
+/**
+ * Search filter
+ */
+
+Template.filters.events({
+  'click .filter' : function (event) {
+    var filter;
+    console.log('click .filter', $(event.target).text());
+
+    var instance = EasySearch.getComponentInstance(
+      { index: 'objects' }
+    );
+    if ($(event.target).text() == 'All') {
+      filter = [];
+    } else {
+      filter = [$(event.target).text()]; // TODO: add multiple filter capacity
+    }
+    // change the filter
+    EasySearch.changeProperty('objects', 'filteredType', filter);
+
+    instance.triggerSearch();
+  }
+});
