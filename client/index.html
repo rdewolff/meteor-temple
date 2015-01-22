@@ -48,8 +48,17 @@
           </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
+          <!-- <li>
+            <a href="#" id="templeLogin" class="templeLogin"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+          </li> -->
+          <!-- If user is logged in -->
+          {{#if currentUser}}
           <li>
-            <a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+            <a href="/admintool"><span class="glyphicon glyphicon-list-alt"></span> Admin</a>
+          </li>
+          {{ /if }}
+          <li>
+            {{ > loginButtons }}
           </li>
         </ul>
       </div>
