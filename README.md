@@ -13,6 +13,7 @@
 - advanced search via minimal/reusable config options
   - first a search form with advanced controls (like text, date, listbox, 'smart drop down', etc..)
   - then make it dynamic
+- translation, implement i18n with database. Check https://github.com/TAPevents/tap-i18n-db which seems pretty cool!
 
 ## FIXED
 
