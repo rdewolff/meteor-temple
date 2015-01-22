@@ -18,3 +18,17 @@ Template.hello.events({
   }
 });
 */
+
+// FIXME: why can't we target the click on the object ID with #  ??
+Template.header.events({
+  'click .templeLogin': function() {
+    console.log('login dude!');
+    // console.dir(Accounts);
+    // Accounts.loginWithPassword;
+  }
+})
+
+// generic object count function using the session where the number is stored.
+UI.registerHelper('count', function() {
+  return Session.get('objectCount');
+});
