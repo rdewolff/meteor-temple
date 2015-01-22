@@ -17,6 +17,10 @@ UI.registerHelper("data", function(){
   switch (Session.get('view')){
     case 'list':
       // list view - array of objects
+      // save the list object to the session
+      // console.log(TempleData[Session.get('module')].find({}, {fields: {_id: 1}}).fetch());
+      Session.set('objectList', TempleData[Session.get('module')].find({}, {fields: {_id: 1}}).fetch());
+      Session.set('objectCount', TempleData[Session.get('module')].find({}).count());
       return TempleData[Session.get('module')].find({});
       break;
     case 'details':
