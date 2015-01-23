@@ -11,17 +11,23 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
+
   api.versionsFrom('1.0.3.1');
-  api.imply('templating');
-  // api.use(['templating'], 'client');
-  // api.use(['minimongo', 'mongo-livedata', 'templating'], 'client');
-  api.use(['iron:router']);
+
+  api.imply([
+    'meteor',
+    'templating',
+    'iron:router'
+  ]);
+
+  api.use(['iron:router', 'templating'], ['client', 'server']);
+
+  api.addFiles('rdewolff:temple-admintool.js');
   api.addFiles('routes.js');
   api.addFiles('adminHome.html', 'client');
   api.addFiles('adminHome.js', 'client');
   api.addFiles('menu.html', 'client');
   api.addFiles('menu.js', 'client');
-  api.addFiles('rdewolff:temple-admintool.js');
 });
 
 Package.onTest(function(api) {
