@@ -53,8 +53,19 @@
           </li> -->
           <!-- If user is logged in -->
           {{#if currentUser}}
-          <li>
-            <a href="/admintool"><span class="glyphicon glyphicon-list-alt"></span> Admin</a>
+          <li class="dropdown">
+
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Admin <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/admintool"><span class="glyphicon glyphicon-list-alt"></span> Properties</a></li>
+              <li><a href="/admin">Data</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header">Nav header</li>
+              <li><a href="#">Separated link</a></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+
           </li>
           {{ /if }}
 
@@ -71,7 +82,5 @@
   <div class="footer">
     <hr>
     <p>&copy; Zetcom 2014</p>
-    <a class="btn btn-warning btn-sm" href="/admin">Temple Admin</a>
-    <p class="spacer"></p>
   </div>
 </template>
