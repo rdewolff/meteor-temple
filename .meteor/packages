@@ -11,4 +11,5 @@ nemo64:bootstrap
 houston:admin
 matteodem:easy-search
 
-accounts-ui
+rdewolff:temple-admintool
+ian:accounts-ui-bootstrap-3
