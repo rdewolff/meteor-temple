@@ -15,6 +15,10 @@ Package.onUse(function(api) {
   api.imply('templating');
   // api.use(['templating'], 'client');
   // api.use(['minimongo', 'mongo-livedata', 'templating'], 'client');
+  api.use(['iron:router']);
+  api.addFiles('routes.js');
+  api.addFiles('adminHome.html', 'client');
+  api.addFiles('adminHome.js', 'client');
   api.addFiles('menu.html', 'client');
   api.addFiles('menu.js', 'client');
   api.addFiles('rdewolff:temple-admintool.js');
