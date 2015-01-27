@@ -34,8 +34,8 @@ Package.onUse(function(api) {
   api.addFiles('client/views/adminHome.js', 'client');
   api.addFiles('client/views/menu.html', 'client');
   api.addFiles('client/views/menu.js', 'client');
-  api.addFiles('client/views/properties.js', 'client');
   api.addFiles('client/views/properties.html', 'client');
+  api.addFiles('client/views/properties.js', 'client');
 });
 
 Package.onTest(function(api) {

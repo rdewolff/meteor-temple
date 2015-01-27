@@ -1,5 +1,42 @@
 <template name="properties">
 
-  properties
+  <h1>Properties</h1>
+
+  <table class="table">
+
+    <tr>
+      <th>
+        Name
+      </th>
+      <th>
+        Value
+      </th>
+    </tr>
+
+    {{#each properties}}
+    <tr>
+      <td>
+        {{name}}
+      </td>
+      <td>
+        {{value}}
+      </td>
+    </tr>
+    {{/each}}
+
+    <!-- New field -->
+    <tr>
+      <td>
+        <input type="text" id="name" value="" class="form-control">
+      </td>
+      <td>
+        <input type="text" id="value" value="" class="form-control">
+      </td>
+      <td>
+        <input type="button" id="add" value="Add" class="form-control btn-success add">
+      </td>
+    </tr>
+
+  </table>
 
 </template>

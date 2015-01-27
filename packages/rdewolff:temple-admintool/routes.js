@@ -9,6 +9,13 @@ try {
   SysModules = new Mongo.Collection("sys_modules");
 }
 
+// Register the modules first - required!
+if (Meteor.isServer) {
+  Meteor.publish('sys_properties', function () {
+    return SysProperties.find({});
+  });
+}
+
 Router.map(function () {
 
   /**
@@ -24,7 +31,10 @@ Router.map(function () {
   this.route('atProperties', {
     path: '/at/properties',
     template: 'properties',
-    data: { sysProperties: function() { return SysProperties.find() } }
-  })
+    waitOn: function() { return Meteor.subscribe('sys_properties'); },
+    data: {
+      properties : function() { return Mongo.Collection.get('sys_properties').find(); }
+    }
+  });
 
 });
