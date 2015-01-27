@@ -17,17 +17,25 @@ Package.onUse(function(api) {
   api.imply([
     'meteor',
     'templating',
-    'iron:router'
+    'iron:router',
+    'mongo'
   ]);
 
-  api.use(['iron:router', 'templating'], ['client', 'server']);
+  api.use(['meteor', 'iron:router', 'templating', 'mongo'], ['client', 'server']);
 
+  // client & server, all architectures
   api.addFiles('rdewolff:temple-admintool.js');
   api.addFiles('routes.js');
-  api.addFiles('adminHome.html', 'client');
-  api.addFiles('adminHome.js', 'client');
-  api.addFiles('menu.html', 'client');
-  api.addFiles('menu.js', 'client');
+
+  // server only
+
+  // client only
+  api.addFiles('client/views/adminHome.html', 'client');
+  api.addFiles('client/views/adminHome.js', 'client');
+  api.addFiles('client/views/menu.html', 'client');
+  api.addFiles('client/views/menu.js', 'client');
+  api.addFiles('client/views/properties.js', 'client');
+  api.addFiles('client/views/properties.html', 'client');
 });
 
 Package.onTest(function(api) {
