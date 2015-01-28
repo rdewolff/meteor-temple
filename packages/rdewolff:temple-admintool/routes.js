@@ -23,7 +23,7 @@ Router.map(function () {
   */
   this.route('atHome', {
     path: '/at',
-    template: 'atHome'
+    template: 'adminHome'
     /*waitOn: function() {return Meteor.subscribe('artists') },*/
     /*data: {artists : function() {return TempleData['artists'].find(); } }*/
   });
