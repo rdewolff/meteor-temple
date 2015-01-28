@@ -1,0 +1,4 @@
+td, th {
+  /* FIXME: not taken into consideration due to CSS loading order */
+  padding: 3px;
+}

@@ -15,6 +15,7 @@ Template.properties.events({
   // delete the selected element
   'click .delete' : function(event, template) {
     // FIXME: use fixed id on the row for proper selection. Currently we depend on the view structure (prototype)
+    // use maybe some solution like described here : https://github.com/aldeed/meteor-autoform/issues/298#issuecomment-55061540
     ObjIdToDel = $(event.target).parent().parent().find('[name=id]').val();
     // debug: console.log(ObjIdToDel);
     Mongo.Collection.get('sys_properties').remove(ObjIdToDel);
@@ -23,6 +24,7 @@ Template.properties.events({
   // update the element after any keypress
   'keyup .edit' : function(event, template) {
     // FIXME: use fixed id on the row for proper selection. Currently we depend on the view structure (prototype)
+    // use maybe some solution like described here : https://github.com/aldeed/meteor-autoform/issues/298#issuecomment-55061540
     ObjIdToUpdate = $(event.target).parent().parent().find('[name=id]').val();
     // debug: console.log(ObjIdToUpdate);
 
