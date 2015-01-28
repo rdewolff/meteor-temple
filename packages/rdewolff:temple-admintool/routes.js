@@ -31,7 +31,8 @@ Router.map(function () {
   this.route('atProperties', {
     path: '/at/properties',
     template: 'properties',
-    waitOn: function() { return Meteor.subscribe('sys_properties'); },
+    waitOn:
+      function() { return Meteor.subscribe('sys_properties'); },
     data: {
       properties : function() { return Mongo.Collection.get('sys_properties').find(); }
     }
