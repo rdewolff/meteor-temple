@@ -36,6 +36,7 @@ Package.onUse(function(api) {
   api.addFiles('client/views/menu.js', 'client');
   api.addFiles('client/views/properties.html', 'client');
   api.addFiles('client/views/properties.js', 'client');
+  api.addFiles('client/views/properties.css', 'client');
 });
 
 Package.onTest(function(api) {

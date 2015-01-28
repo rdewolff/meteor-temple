@@ -16,10 +16,14 @@
     {{#each properties}}
     <tr>
       <td>
-        {{name}}
+        <input type="hidden" name="id" value="{{_id}}">
+        <input type="text" name="name" value="{{name}}" class="form-control edit">
       </td>
       <td>
-        {{value}}
+        <input type="text" name="value" value="{{value}}" class="form-control edit">
+      </td>
+      <td>
+        <button type="button" class="btn btn-danger delete">Delete</button>
       </td>
     </tr>
     {{/each}}
@@ -33,7 +37,7 @@
         <input type="text" id="value" value="" class="form-control">
       </td>
       <td>
-        <input type="button" id="add" value="Add" class="form-control btn-success add">
+        <button type="button" class="btn btn-success add">Add</button>
       </td>
     </tr>
 
