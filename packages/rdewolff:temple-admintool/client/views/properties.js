@@ -32,7 +32,13 @@ Template.properties.events({
       name: $(event.target).parent().parent().find('[name=name]').val(),
       value: $(event.target).parent().parent().find('[name=value]').val()
     });
+  },
 
+  'click .duplicate' : function(event, template) {
+    Mongo.Collection.get('sys_properties').insert({
+      name: $(event.target).parent().parent().find('[name=name]').val(),
+      value: $(event.target).parent().parent().find('[name=value]').val()
+    });
   }
 
 });
