@@ -19,6 +19,10 @@
 
 - 22.10.2014 - main menu not updating selection on page change. A full page refresh does highlight the correct menu element.
 
+## Libraries used
+
+- mongo-collection-instances - to be able to retrieve used instances easily
+
 ## Dynamic render template steps
 
 - the URL determine the template to use
