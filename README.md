@@ -10,7 +10,9 @@
 
 ## TODO / TOFIX
 
-- advanced search via minimal/reusable config options
+- Navigating from a list to a detail page : ability to navigate the items with previous & next arrows.
+- Define data visible/accessible in the view.
+- advanced search via minimal/reusable config options and/or components
   - first a search form with advanced controls (like text, date, listbox, 'smart drop down', etc..)
   - then make it dynamic
 - translation, implement i18n with database. Check https://github.com/TAPevents/tap-i18n-db which seems pretty cool!
