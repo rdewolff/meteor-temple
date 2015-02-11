@@ -52,7 +52,8 @@ if ( TempleData['objects'].find().count() === 0 ) {
     date: 2010,
     description: 'Video (DVD)',
     type: 'Video',
-    status: 'highlight'
+    status: 'highlight',
+    img: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4OwF4B0CFwqDGW3-yOtC-8RMMe8AQ5QBiWtbcs6YjwX5hwjVgnMIlNdh8'
   });
   TempleData['objects'].insert({
     title: 'Faux facade',
@@ -60,7 +61,8 @@ if ( TempleData['objects'].find().count() === 0 ) {
     dimension: '150x140x210 cm',
     description: 'Graue Safari-Baumwollköper in Lattengerüst',
     type: 'Tableau',
-    status: 'highlight'
+    status: 'highlight',
+    img: 'http://img.edilportale.com/products/prodotti-16458-rel3c92e912-484b-7b27-aea2-b5709faf1eaf.jpg'
   });
   TempleData['objects'].insert({
     title: 'La Joconde',
@@ -69,7 +71,8 @@ if ( TempleData['objects'].find().count() === 0 ) {
     location: 'Musée du Louvre, Paris',
     description: 'Graue Safari-Baumwollköper in Lattengerüst',
     type: 'Tableau',
-    status: 'draft'
+    status: 'draft',
+    img: 'http://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg/280px-Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg'
   });
 }
 

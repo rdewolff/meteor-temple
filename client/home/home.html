@@ -15,6 +15,13 @@
 
   {{#each objects}}
     <h4><a href="/objects/{{_id}}">{{title}} {{date}}</a></h4>
+    <img style='max-height: 180px; max-width: 180px' src="{{img}}" alt="{{title}}" class="img-circle">
   {{/each}}
+
+  <div class="col-lg-4">
+  {{#each tasks}}
+    <h4>{{text}}</h4>
+  {{/each}}
+  </div>
 
 </template>
