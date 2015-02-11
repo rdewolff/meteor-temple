@@ -51,14 +51,16 @@ if ( TempleData['objects'].find().count() === 0 ) {
     title: 'Jagged Lines',
     date: 2010,
     description: 'Video (DVD)',
-    type: 'Video'
+    type: 'Video',
+    status: 'highlight'
   });
   TempleData['objects'].insert({
     title: 'Faux facade',
     date: 2011,
     dimension: '150x140x210 cm',
     description: 'Graue Safari-Baumwollköper in Lattengerüst',
-    type: 'Tableau'
+    type: 'Tableau',
+    status: 'highlight'
   });
   TempleData['objects'].insert({
     title: 'La Joconde',
@@ -66,7 +68,8 @@ if ( TempleData['objects'].find().count() === 0 ) {
     dimension: '77x53 cm',
     location: 'Musée du Louvre, Paris',
     description: 'Graue Safari-Baumwollköper in Lattengerüst',
-    type: 'Tableau'
+    type: 'Tableau',
+    status: 'draft'
   });
 }
 

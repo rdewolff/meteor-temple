@@ -13,4 +13,8 @@
 	  </div>
 	</div>
 
+  {{#each objects}}
+    <h4><a href="/objects/{{_id}}">{{title}} {{date}}</a></h4>
+  {{/each}}
+
 </template>
