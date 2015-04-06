@@ -32,3 +32,20 @@ Template.header.events({
 UI.registerHelper('count', function() {
   return Session.get('objectCount');
 });
+
+Session.set("Mongol", {
+	'collections': [
+    'artists'
+    //'sys_views'
+    /*'sys_properties',
+    'sys_modules',
+    'sys_views',
+    'sys_labels',
+    'objects',
+    'exhibitions',
+    'artists'*/
+    ],
+	'display': true,
+	'opacity_normal': ".7",
+	'opacity_expand': ".9",
+});

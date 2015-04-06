@@ -100,6 +100,14 @@ if ( TempleData['artists'].find().count() === 0 ) {
     lastname: 'Jones',
     email: 'melinda.jones@gmail.com'
   });
+  // massive artist data
+  for (var i = 0; i < 10; i++) {
+    TempleData['artists'].insert({
+      firstname: Fake.user({fields: ['surname']}).surname,
+      lastname: Fake.user({fields: ['name']}).name,
+      email: Fake.user({fields: ['email']}).email
+    });
+  }
 }
 
 // exhibitions

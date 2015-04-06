@@ -19,6 +19,7 @@
 - multilangue label
 - pagination
 - setup guide (choose main data source, configure synchro, select modules, define views, generate basic app skeleton)
+- generate heaps of random data to test the server with massive amount of object (try using anti:fake meteor package for random words, color, type, etc...)
 
 ## FIXED
 
