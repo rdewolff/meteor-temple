@@ -74,10 +74,25 @@ if ( TempleData['objects'].find().count() === 0 ) {
     status: 'draft',
     img: 'http://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg/280px-Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg'
   });
+  // add some random data
+  for (var i = 0; i < 10; i++) {
+    TempleData['objects'].insert({
+      title: Fake.word(),
+      date: Math.floor(Math.random() * 2015),
+      dimension: '77x53 cm',
+      color: Fake.color(),
+      location: 'Rue ' + Fake.word(),
+      description: Fake.sentence(),
+      type: 'Tableau',
+      status: 'highlight',
+      img: 'http://lorempixel.com/640/480/nature/'
+    });
+  }
 }
 
 // artists
 if ( TempleData['artists'].find().count() === 0 ) {
+  // same 4 artist
   TempleData['artists'].insert({
     firstname: 'Kaspar',
     lastname: 'Bucher',
