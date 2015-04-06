@@ -16,3 +16,4 @@ ian:accounts-ui-bootstrap-3
 dburles:mongo-collection-instances
 anti:fake
 msavin:mongol
+mrt:jquery-masonry
